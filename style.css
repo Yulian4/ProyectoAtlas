@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-image: url(./assets/images/banner-bk.jpg);
+    height: 57vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.container-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 3vh;
+}
+
+.item-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.item-one img {
+    width: 10vh;
+}
+
+.item-two {
+    text-align: left;
+    color: white;
+    width: 60vw;
+    margin: auto;
+}
+
+.item-two h1 {
+    font-size: 5vh;
+}
+
+.item-two p {
+    font-size: 2vh;
+    margin: 2vh 0;
+}
+
+.item-two button {
+    border-radius: 5vh;
+    padding: 1.5vh 3vh;
+    background-color: rgb(0, 255, 173);
+    font-weight: 600;
+}
+
+.two-container {
+    text-align: center;
+    margin: 5vh;
+
+}
+
+.container-two {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-three {
+    width: 25vw;
+    text-align: center;
+}
+
+.item-three img {
+    width: 20vh;
+}
+
+.fondo {
+    background: linear-gradient(165deg, white 50%, rgb(0, 255, 173) 50%);
+    padding: 5vh 0;
+}
+
+.container-three,
+.container-four {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vh;
+    line-height: 5vh;
+}
+
+.container-three img,
+.container-four img {
+    width: 45vh;
+}
+
+.item-four,
+.item-five {
+    width: 35vw;
+}
+
+.fondo button {
+    background-color: #192440;
+    color: white;
+    border-radius: 6vh;
+    width: 15vh;
+    height: 4vh;
+    font-weight: 900;
+}
+
+#title2 {
+    text-align: center;
+    margin: 2vh 0 0;
+}
+
+.container-five {
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+    text-align: center;
+    gap: 20vh;
+}
+
+.precio-2 {
+    line-height: 4vh;
+
+}
+
+.precio-2 button {
+    background-color: white;
+    border-radius: 4vh;
+    width: 14vh;
+    height: 4vh;
+    font-weight: 700;
+}
+
+.precio-3 {
+    background-color: #192440;
+    width: 30vh;
+    height: 40vh;
+    padding: 3vh;
+    border-radius: 1vh;
+    line-height: 4vh;
+    color: white;
+
+}
+
+.precio-3 button {
+    background-color: rgb(0, 255, 173);
+    border-radius: 4vh;
+    width: 14vh;
+    height: 4vh;
+    font-weight: 700;
+}
+
+span {
+    font-size: 6vh;
+    font-weight: 700;
+
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3vh;
+    padding: 5vh;
+    background-color: #edeef0;
+}
+
+footer {
+    background-color: #0D1B2A;
+    color: white;
+    padding: 5vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contenedor para el texto y el formulario */
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Información de contacto (Izquierda) */
+.contact-info {
+    width: 50%;
+    max-width: 450px;
+}
+
+/* Formulario (Derecha) */
+.contact-form {
+    width: 50%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilos de los inputs y textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #00FFCE;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Botón */
+.contact-form button {
+    background-color: #00FFCE;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.5vh;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 5vh;
+    width: 10vw;
+}
+
+.contact-form button:hover {
+    background-color: #00CCAA;
+}
+
+/* Redes sociales */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 920px) {
+    .container-five {
+        flex-wrap: wrap;
+
+    }
+
+    .precio-2 {
+        border: 2px solid black;
+        width: 30vh;
+        height: 40vh;
+        padding: 3vh;
+        border-radius: 1vh;
+    }
+
+    .precio-3 {
+        margin: 0;
+    }
+
+    .clients img {
+        width: 8vw;
+        padding: 1vh;
+    }
+}
+@media(max-width:768px) {
+
+    .container-three,
+    .container-four {
+        line-height: 2.6vh;
+    }
+
+    .container-two img {
+        width: 22vw;
+    }
+
+    .container-two {
+        text-align: left;
+    }
+
+    .item-three {
+        width: 30vw;
+
+    }
+
+    .fondo img {
+        width: 35vw;
+    }
+
+    .fondo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .item-four button,
+    .item-five button {
+        width: 20vw;
+        height: 2.5vh;
+        font-weight: 100;
+        font-size: 1.3vh;
+    }
+
+    p {
+        font-size: 1.2vh;
+    }
+
+    h2 {
+        font-size: 2.4vh;
+    }
+
+    .container-five {
+        gap: 2vh;
+    }
+
+    .precio-2 {
+        width: 25vw;
+        line-height: 2vh;
+        height: 29vh;
+        border: none;
+    }
+
+    .precio-3 {
+        width: 25vw;
+        line-height: 2vh;
+        height: 29vh;
+    }
+
+    span {
+        font-size: 3vh;
+        font-weight: 600;
+
+    }
+
+    .precio-2 button,
+    .precio-3 button {
+        width: 10vw;
+        height: 2.5vh;
+        font-weight: 700;
+        font-size: 1vh;
+    }
+
+    .precio-2 h3,
+    .precio-3 h3 {
+        font-size: 0.6rem;
+    }
+
+    .contact-form button {
+        width: 16vw;
+        height: 2vh;
+        font-size: 1.5vh;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media(max-width:1279px) {
+
+    .container-three,
+    .container-four {
+        line-height: 3vh;
+
+    }
+
+    .clients img {
+        width: 8vw;
+
+        padding: 1vh;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    header {
+        background-position-x: -50px;
+    }
+
+    .item-two h1 {
+        font-size: 3vh;
+    }
+
+    .item-two p {
+        font-size: 1.5vh;
+
+    }
+
+    .two-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .item-three {
+        margin: 0 1.7vh;
+    }
+
+    .container-two img {
+        width: 25vw;
+    }
+
+    p {
+        font-size: 1.2vh;
+    }
+
+    h2 {
+        font-size: 2.4vh;
+    }
+
+    .container-three,
+    .container-four {
+        line-height: 2vh;
+    }
+
+    .fondo img {
+        width: 35vw;
+    }
+
+    .item-four button,
+    .item-five button {
+        width: 20vw;
+        height: 2.5vh;
+        font-weight: 100;
+        font-size: 1.3vh;
+    }
+
+    .clients img {
+        width: 20vw;
+        height: 7.5vh;
+        padding: 1vh;
+    }
+
+    .clients {
+        padding: 0 2vh;
+    }
+
+    .container-five {
+        gap: 5vh;
+    }
+
+    .contact-form button {
+        width: 22vw;
+        height: 2vh;
+        font-size: 1.5vh;
+        display: flex;
+        align-items: center;
+    }
+
+}
