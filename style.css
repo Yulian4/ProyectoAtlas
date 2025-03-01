@@ -252,9 +252,47 @@ footer {
     opacity: 0.7;
 }
 
+
+@media(max-width:1279px) {
+
+    .container-three,
+    .container-four {
+        line-height: 3vh;
+
+    }
+
+    .clients img {
+        width: 8vw;
+
+        padding: 1vh;
+    }
+
+    .container-five {
+        gap: 17vh;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .container-five {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .precio-2 {
+        width: 36vw;
+        border: 2px solid black;
+        padding: 5vh;
+        border-radius: 2vh;
+    }
+
+}
+
 @media (max-width: 920px) {
     .container-five {
         flex-wrap: wrap;
+        gap: 2vh;
 
     }
 
@@ -275,7 +313,28 @@ footer {
         padding: 1vh;
     }
 }
+
 @media(max-width:768px) {
+    .container-one {
+        padding: 0;
+    }
+
+    .item-two {
+        width: 100%;
+        padding: 4vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-two h1 {
+        font-size: 2.8rem;
+    }
+
+    .item-two p {
+        font-size: 1.3rem;
+    }
 
     .container-three,
     .container-four {
@@ -322,19 +381,25 @@ footer {
 
     .container-five {
         gap: 2vh;
+        flex-direction: column;
     }
 
     .precio-2 {
-        width: 25vw;
-        line-height: 2vh;
-        height: 29vh;
-        border: none;
+        width: 65vw;
+        height: 40vh;
+        border: solid 0.2vh black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .precio-3 {
-        width: 25vw;
-        line-height: 2vh;
-        height: 29vh;
+        width: 65vw;
+        height: 40vh;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7.5vh;
     }
 
     span {
@@ -345,15 +410,20 @@ footer {
 
     .precio-2 button,
     .precio-3 button {
-        width: 10vw;
-        height: 2.5vh;
-        font-weight: 700;
-        font-size: 1vh;
+        width: 20vw;
+        height: 4vh;
+        font-weight: 500;
+        font-size: 1rem;
     }
 
     .precio-2 h3,
     .precio-3 h3 {
-        font-size: 0.6rem;
+        font-size: 2rem;
+    }
+
+    .precio-2 p,
+    .precio-3 p {
+        font-size: 1.2rem;
     }
 
     .contact-form button {
@@ -363,24 +433,13 @@ footer {
         display: flex;
         align-items: center;
     }
-}
-
-@media(max-width:1279px) {
-
-    .container-three,
-    .container-four {
-        line-height: 3vh;
-
-    }
 
     .clients img {
-        width: 8vw;
-
-        padding: 1vh;
+        width: 18vw;
+        padding: 0;
     }
+
 }
-
-
 
 @media (max-width: 480px) {
     header {
@@ -401,29 +460,65 @@ footer {
         padding: 0;
     }
 
+    .container-two {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .item-three {
-        margin: 0 1.7vh;
+        width: 100%;
+    }
+
+    .item-three h3 {
+        font-size: 2rem;
+    }
+
+    .item-three p {
+        font-size: 1.5rem;
     }
 
     .container-two img {
         width: 25vw;
     }
 
-    p {
-        font-size: 1.2vh;
-    }
-
-    h2 {
-        font-size: 2.4vh;
-    }
 
     .container-three,
     .container-four {
-        line-height: 2vh;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2vh;
+    }
+
+    .container-four {
+        flex-direction: column-reverse;
+    }
+
+    .item-four,
+    .item-five {
+        width: 90%;
     }
 
     .fondo img {
-        width: 35vw;
+        width: 80%;
+        max-width: 250px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        padding: 2vh 0;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    .fondo button {
+        width: 50%;
+        height: 4vh;
+        font-size: 1rem;
+        font-weight: bold;
     }
 
     .item-four button,
